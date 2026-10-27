@@ -1,0 +1,133 @@
+{
+  "operationalLayers": [
+    {
+      "id": "1a17b36aa1f-layer-2",
+      "title": "NYPD Police Stations",
+      "url": "https://services1.arcgis.com/8cuieNI8NbqQZQVJ/arcgis/rest/services/Emergency_Services__Public_View/FeatureServer/1",
+      "layerType": "ArcGISFeatureLayer",
+      "layerDefinition": {
+        "fieldConfigurations": [
+          {
+            "name": "POLICE_PREC",
+            "fieldFormat": {
+              "type": "number",
+              "maximumFractionDigits": 0,
+              "useGrouping": "always"
+            }
+          }
+        ],
+        "drawingInfo": {
+          "renderer": {
+            "type": "simple",
+            "symbol": {
+              "type": "esriSMS",
+              "color": [
+                209,
+                73,
+                91,
+                255
+              ],
+              "angle": 0,
+              "xoffset": 0,
+              "yoffset": 0,
+              "size": 8,
+              "style": "esriSMSCircle",
+              "outline": {
+                "type": "esriSLS",
+                "color": [
+                  255,
+                  255,
+                  255,
+                  255
+                ],
+                "width": 1.5,
+                "style": "esriSLSSolid"
+              }
+            }
+          }
+        }
+      },
+      "popupInfo": {
+        "popupElements": [
+          {
+            "type": "fields",
+            "fieldInfos": [
+              {
+                "fieldName": "POLICE_PREC",
+                "isEditable": true,
+                "label": "Police precinct",
+                "visible": true
+              },
+              {
+                "fieldName": "FACILITY_ADDRESS",
+                "isEditable": true,
+                "label": "Address",
+                "visible": true
+              }
+            ]
+          }
+        ],
+        "fieldInfos": [
+          {
+            "fieldName": "POLICE_PREC",
+            "isEditable": true,
+            "label": "Police precinct",
+            "visible": true
+          },
+          {
+            "fieldName": "FACILITY_ADDRESS",
+            "isEditable": true,
+            "label": "Address",
+            "visible": true
+          }
+        ],
+        "title": "NYPD Precinct {POLICE_PREC}"
+      },
+      "blendMode": "normal"
+    }
+  ],
+  "baseMap": {
+    "baseMapLayers": [
+      {
+        "id": "gray-base-layer",
+        "opacity": 1,
+        "title": "Light Gray Base",
+        "visibility": true,
+        "layerType": "VectorTileLayer",
+        "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/291da5eab3a0412593b66d384379f89f/resources/styles/root.json"
+      },
+      {
+        "id": "gray-reference-layer",
+        "opacity": 1,
+        "title": "Light Gray Reference",
+        "visibility": true,
+        "layerType": "VectorTileLayer",
+        "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/1768e8369a214dfab4e2167d5c5f2454/resources/styles/root.json",
+        "isReference": true
+      }
+    ],
+    "title": "Light Gray Canvas"
+  },
+  "authoringApp": "ArcGIS API for JavaScript",
+  "authoringAppVersion": "5.1",
+  "spatialReference": {
+    "latestWkid": 3857,
+    "wkid": 102100
+  },
+  "timeZone": "system",
+  "version": "2.37",
+  "initialState": {
+    "viewpoint": {
+      "targetGeometry": {
+        "spatialReference": {
+          "latestWkid": 3857,
+          "wkid": 102100
+        },
+        "xmin": -8266156.409628796,
+        "ymin": 4938359.5881698495,
+        "xmax": -8204374.452987921,
+        "ymax": 4999567.050704
+      }
+    }
+  }
+}
